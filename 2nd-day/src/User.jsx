@@ -1,10 +1,9 @@
-function User({name, age, country}){
+function User({name, age}){
     return(
-    <div style={{border:"1px solid black", borderRadius:"16px", marginBottom:"20px"}}>
-    <h1 style={{textAlign:"center"}}>Name: {name} </h1>
-    <h1 style={{textAlign:"center"}}>Age: {age}</h1>
-    <h1 style={{textAlign:"center"}}>Country: {country} </h1>
-   </div>
+        <>
+        <h1>{name}</h1>
+        <h1>{age}</h1>
+        </>
     )
 }
 export default User

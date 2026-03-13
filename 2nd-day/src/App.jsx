@@ -1,3 +1,4 @@
+import User from "./User";
 function App(){
   const users = [
   { id: 1, name: "Galib", age: 19 },
@@ -7,10 +8,7 @@ function App(){
     return(
       <>
       {users.map(el=>(
-        <div key={el.id}>
-          <h1>Name: {el.name}</h1>
-          <h2>Age: {el.age}</h2>
-        </div>
+      <User key={el.id} name={el.name} age={el.age} />
       ))}
       </>
     )
