@@ -1,16 +1,13 @@
-function LogIn(){
-  return <h1>Please Logged In</h1>
-}
-function Dashboard(){
-  return <h1>Welcome back!!!</h1>
-}
-
-function App() {
-  const isLoggedIn = false
-  return (
-   <>
-    {isLoggedIn? <Dashboard /> : <LogIn />}
-   </>
+function App(){
+  const users = ['Farhan', 'Ishraq', 'Galib', 'Sakib', 'Tamim']
+  return(
+    <>
+      <ul>
+        {users.map((el, index)=>
+        <li key={index} >{el}</li>
+        )}
+      </ul>
+    </>
   )
 }
 
