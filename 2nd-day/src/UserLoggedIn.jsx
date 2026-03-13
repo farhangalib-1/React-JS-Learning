@@ -1,8 +1,10 @@
 function UserLoggedIn(){
     const isLoggedIn = true
+    const isLoggedIn2 = false
     return(
         <>
-        {isLoggedIn?<h1>Welcome Back!!!</h1> : <h1>Please log in</h1>}
+        {isLoggedIn&& <h1>Welcome Back!!!</h1>}
+        {isLoggedIn2||<h1>please logged in</h1>}
         </>
     )
 }
