@@ -3,6 +3,6 @@ import { createRoot } from 'react-dom/client'
 import UserLoggedIn from './UserLoggedIn.jsx'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <UserLoggedIn  />
+    <UserLoggedIn loggedIn={true}  />
   </StrictMode>,
 )
