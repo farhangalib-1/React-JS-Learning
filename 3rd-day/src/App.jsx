@@ -1,12 +1,14 @@
 import './App.css'
 export default function App() {
-  const handleEvent = ()=>{
-    alert('Ohhhh Nooooo!!!!!! You are hackeddddd')
+  const handleEvent = (event)=>{
+    console.log(event.target.value);
+    
   }
   return (
-    <div>
+    <div >
       <h1>Hello World</h1>
-      <button onClick={handleEvent} className="btn">Click me</button>
+      <button className="btn">Click me</button>
+      <input onClick={handleEvent} type='text'></input>
     </div>
   )
 }
